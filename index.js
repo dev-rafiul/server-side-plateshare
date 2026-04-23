@@ -27,7 +27,11 @@ app.options("*", cors());
 app.use(express.json());
 
 // ─── MONGODB (cached connection for serverless) ───────────────────────────────
-const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.3o3pwj7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+// const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.3o3pwj7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+
+
+
+const uri = `mongodb+srv://server-for-plateshare:4NvtKWmGUA31Az83@cluster0.3o3pwj7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 const client = new MongoClient(uri, {
   serverApi: {
