@@ -11,7 +11,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:3000",
-      "https://curious-palmier-ba6203.netlify.app",
+      "https://plate-shares.netlify.app",
     ],
     credentials: true,
   })
